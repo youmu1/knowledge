@@ -1,0 +1,137 @@
+# 我的工程知识库索引
+
+> 这是一个个人知识库，用于沉淀在工程实践中的学习成果和最佳实践。
+
+## 📚 目录结构
+
+```
+knowledge-base/
+├── patterns/          # 设计模式落地实践
+├── refactoring/       # 重构案例记录
+├── business-rules/    # 核心业务逻辑定义
+└── ai-collaboration/  # AI 协作技巧和模板
+```
+
+## 🎯 设计模式落地实践
+
+### 策略模式系列
+- [Factory + Handler 模式](./patterns/factory-handler-pattern.md)
+  - 解决深层 if-else 嵌套问题
+  - Spring 依赖注入的最佳实践
+  - 函数式接口的应用
+  - **案例**：CapitalFlowService 现金流处理
+
+### 流程编排模式系列
+- [Pipeline + Stage 模式](./patterns/pipeline-stage-pattern.md)
+  - 将复杂业务流程拆解为多个可插拔阶段
+  - 使用 @Order 注解控制执行顺序
+  - 支持条件执行和流程中断
+  - **案例**：订单处理流程（验证 -> 计算 -> 支付 -> 发货 -> 创建）
+
+### 状态管理模式系列
+- [State + Machine / Engine 模式](./patterns/state-machine-pattern.md)
+  - 管理对象在不同状态下的行为转换
+  - 状态转换规则清晰明确
+  - 防止非法状态转换
+  - **案例**：订单状态机（待支付 -> 已支付 -> 已发货 -> 已收货 -> 已完成）
+
+### 数据转换模式系列
+- [Converter / Mapper + Decorator 模式](./patterns/converter-decorator-pattern.md)
+  - Entity 到 DTO/VO 的转换
+  - 数据增强（ID 到名称翻译、格式化）
+  - 批量优化避免 N+1 查询
+  - **案例**：订单数据转换与增强（用户信息、商品信息、状态描述）
+
+### 事件驱动模式系列
+- [Publisher + Listener / Observer 模式](./patterns/publisher-listener-pattern.md)
+  - 业务解耦，主流程与副产物逻辑分离
+  - 支持异步处理提高性能
+  - 易于扩展监听器
+  - **案例**：订单事件系统（创建通知、支付通知、发货通知）
+
+### 适配器模式系列
+- [Adapter / Proxy + Provider 模式](./patterns/adapter-provider-pattern.md)
+  - 屏蔽第三方接口差异，统一接入标准
+  - 横切逻辑集中管理（重试、限流、熔断）
+  - 易于扩展新的第三方服务
+  - **案例**：统一支付网关（支付宝、微信支付适配器）
+
+### 建造者模式系列
+- [Builder + Director 模式](./patterns/builder-director-pattern.md)
+  - 避免构造函数参数过多
+  - 支持可选参数和链式调用
+  - Director 封装复杂构建顺序
+  - **案例**：复杂查询条件构建器、Excel 报表定义构建器
+
+## 🔧 重构案例
+
+### 2026年
+- [2026-01-09: CapitalFlowService 重构](./refactoring/2026-01-09-capital-flow-refactoring.md)
+  - 策略模式重构
+  - 代码去重优化
+  - 函数式编程应用
+
+## 💼 业务规则
+
+> 待补充：记录核心业务逻辑的显式定义
+
+## 🤖 AI 协作
+
+- [高效 Prompt 模板](./ai-collaboration/effective-prompts.md)
+- [代码审查模板](./ai-collaboration/code-review-templates.md)
+
+## 📝 使用说明
+
+### 如何添加新知识
+
+1. **完成一次重构或学习后**，立即总结要点
+2. **选择合适的分类**，创建 Markdown 文件
+3. **更新本索引**，添加新条目
+4. **使用 Git 提交**，记录学习历程
+
+### 如何在 Cursor 中引用
+
+**方法一：使用 @ 符号引用**
+```
+@C:\Users\tongyu\Documents\knowledge-base\patterns\factory-handler-pattern.md
+请参考这个模式来优化代码
+```
+
+**方法二：在 .cursorrules 中引用**
+```markdown
+@import C:\Users\tongyu\Documents\knowledge-base\patterns\factory-handler-pattern.md
+```
+
+## 🔍 快速查找
+
+### 按问题查找
+- **消除 if-else** → [Factory + Handler 模式](./patterns/factory-handler-pattern.md)
+- **代码重复** → [CapitalFlowService 重构](./refactoring/2026-01-09-capital-flow-refactoring.md)
+- **超长方法** → [Pipeline + Stage 模式](./patterns/pipeline-stage-pattern.md)
+- **复杂状态流转** → [State + Machine 模式](./patterns/state-machine-pattern.md)
+- **数据转换复杂** → [Converter + Decorator 模式](./patterns/converter-decorator-pattern.md)
+- **业务耦合** → [Publisher + Listener 模式](./patterns/publisher-listener-pattern.md)
+- **第三方接口差异** → [Adapter + Provider 模式](./patterns/adapter-provider-pattern.md)
+- **构造函数参数过多** → [Builder + Director 模式](./patterns/builder-director-pattern.md)
+
+### 按技术栈查找
+- **Spring** → Factory + Handler 模式、Publisher + Listener 模式
+- **函数式编程** → CashFlowHandlerApplier 接口、Builder 链式调用
+- **事件驱动** → Publisher + Listener 模式
+- **状态机** → State + Machine 模式
+- **适配器** → Adapter + Provider 模式
+
+### 按场景查找
+- **订单处理** → Pipeline + Stage 模式、State + Machine 模式
+- **支付集成** → Adapter + Provider 模式
+- **数据导出** → Builder + Director 模式、Converter + Decorator 模式
+- **异步通知** → Publisher + Listener 模式
+- **查询构建** → Builder + Director 模式
+
+## 📅 更新日志
+
+- **2026-01-09**: 
+  - 创建知识库，添加 Factory+Handler 模式和 CapitalFlowService 重构案例
+  - 补全所有设计模式组合：Pipeline+Stage、State+Machine、Converter+Decorator、Publisher+Listener、Adapter+Provider、Builder+Director
+  - 每个模式都包含完整的代码案例和工程实践要点
+
