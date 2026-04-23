@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "812c514eed458c5d",
+        "id": "c1b7cacbb7eb761d",
         "type": "tabs",
         "children": [
           {
-            "id": "c74152b3fa5f16bf",
+            "id": "df6b979426b6198f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "工程知识库.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "patterns/factory-handler-pattern.md",
+                "file": "模式落地实践/builder-director-pattern.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "factory-handler-pattern 的大纲"
+              "title": "builder-director-pattern 的大纲"
             }
           },
           {
@@ -180,32 +180,41 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 381.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:新建数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "bases:创建新数据库": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c74152b3fa5f16bf",
+  "active": "df6b979426b6198f",
   "lastOpenFiles": [
+    "未命名.base",
+    "INDEX.md",
+    "工程知识库.md",
+    "模式落地实践/builder-director-pattern.md",
+    "模式落地实践/adapter-provider-pattern.md",
+    "模式落地实践/责任链模式.md",
     "工程知识库索引.md",
+    "模式落地实践/factory-handler-pattern.md",
+    "设计模式",
+    "AI代码审查模板/effective-prompts.md",
+    "AI代码审查模板/代码审查模板.md",
+    "README.md",
+    "AI协作",
     "模式落地实践/Publisher + Listener或Observer 模式落地实践.md",
     "模式落地实践/State + Machine或Engine 模式落地实践.md",
-    "AI代码审查模板/代码审查模板.md",
-    "模式落地实践/factory-handler-pattern.md",
     "模式落地实践/Converter 或 Mapper + Decorator 模式落地实践.md",
     "AI鍗忎綔/浠ｇ爜瀹℃煡妯℃澘.md",
-    "AI代码审查模板/effective-prompts.md",
     "AI代码审查模板",
-    "模式落地实践/责任链模式.md",
     "重构案例/CapitalFlowService 重构案例.md",
     "重构案例",
     "閲嶆瀯妗堜緥/2026-01-09-capital-flow-refactoring.md",
@@ -215,7 +224,6 @@
     "patterns/publisher-listener-pattern.md",
     "patterns/converter-decorator-pattern.md",
     "patterns/state-machine-pattern.md",
-    "patterns/pipeline-stage-pattern.md",
-    "INDEX.md"
+    "patterns/pipeline-stage-pattern.md"
   ]
 }
