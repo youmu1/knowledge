@@ -1,156 +1,125 @@
-# 工程知识库
-
-> 个人工程实践知识库，用于沉淀设计模式、重构案例、业务规则和 AI 协作技巧。
-
-## 📖 简介
-
-这是一个**本地知识库**，独立于具体项目，用于记录和积累在软件开发过程中的学习成果和最佳实践。
-
-## 🗂️ 目录结构
-
-```
-knowledge-base/
-├── patterns/              # 设计模式落地实践
-│   └── factory-handler-pattern.md
-├── refactoring/          # 重构案例记录
-│   └── 2026-01-09-capital-flow-refactoring.md
-├── business-rules/       # 核心业务逻辑定义
-├── ai-collaboration/    # AI 协作技巧
-│   ├── effective-prompts.md
-│   └── code-review-templates.md
-├── INDEX.md             # 知识库索引
-└── README.md           # 本文件
-```
-
-## 🚀 快速开始
-
-### 1. 查看索引
-打开 [INDEX.md](./INDEX.md) 查看所有知识条目。
-
-### 2. 查找知识
-- **按模式查找**：查看 `patterns/` 目录
-- **按案例查找**：查看 `refactoring/` 目录
-- **按技巧查找**：查看 `ai-collaboration/` 目录
-
-### 3. 添加新知识
-1. 选择合适的分类目录
-2. 创建 Markdown 文件
-3. 更新 `INDEX.md` 添加索引
-
-## 💻 在 Cursor 中使用
-
-### 方法一：使用 @ 符号引用
-```
-@C:\Users\tongyu\Documents\knowledge-base\patterns\factory-handler-pattern.md
-请参考这个模式来优化代码
-```
-
-### 方法二：在 .cursorrules 中引用
-在项目根目录的 `.cursorrules` 文件中：
-```markdown
-@import C:\Users\tongyu\Documents\knowledge-base\patterns\factory-handler-pattern.md
-```
-
-## 📝 使用场景
-
-### 场景 1：开始新任务
-```
-@C:\Users\tongyu\Documents\knowledge-base\patterns\factory-handler-pattern.md
-请参考这个模式来实现订单处理功能
-```
-
-### 场景 2：代码审查
-```
-@C:\Users\tongyu\Documents\knowledge-base\ai-collaboration\code-review-templates.md
-请按照模板审查这段代码
-```
-
-### 场景 3：重构代码
-```
-@C:\Users\tongyu\Documents\knowledge-base\refactoring\2026-01-09-capital-flow-refactoring.md
-参考这个案例，重构当前代码
-```
-
-### 场景 4：生成文档
-```
-@C:\Users\tongyu\Documents\knowledge-base\ai-collaboration\effective-prompts.md
-使用"总结重构要点"模板，生成本次重构的文档
-```
-
-## 🔄 工作流程
-
-### 学习新知识
-1. **实践** → 在项目中应用设计模式或重构代码
-2. **总结** → 让 AI 生成学习总结
-3. **沉淀** → 存入知识库对应目录
-4. **索引** → 更新 INDEX.md
-
-### 应用已有知识
-1. **查找** → 在 INDEX.md 或目录中查找相关模式
-2. **引用** → 在 Cursor 中使用 @ 符号引用
-3. **应用** → 让 AI 参考模式实现代码
-4. **验证** → 检查是否符合最佳实践
-
-## 📚 知识分类
-
-### 设计模式 (patterns/)
-记录设计模式在企业级 Java 开发中的落地实践，包括：
-- 模式概述
-- 核心组件
-- 解决的问题
-- 使用场景
-- 工程实践要点
-
-### 重构案例 (refactoring/)
-记录具体的重构案例，包括：
-- 重构背景
-- 重构前代码
-- 重构方案
-- 重构成果
-- 关键学习点
-
-### 业务规则 (business-rules/)
-记录核心业务逻辑的显式定义，包括：
-- 业务规则描述
-- 边界条件
-- 异常情况处理
-
-### AI 协作 (ai-collaboration/)
-记录与 AI 协作的高效技巧，包括：
-- Prompt 模板
-- 代码审查模板
-- 最佳实践
-
-## 🔍 维护建议
-
-### 定期更新
-- 每次完成重要重构后，立即总结并存入知识库
-- 每月回顾一次，整理和优化已有知识
-
-### 版本控制
-建议为知识库创建 Git 仓库：
-```bash
-cd C:\Users\tongyu\Documents\knowledge-base
-git init
-git add .
-git commit -m "Initial knowledge base"
-```
-
-### 知识质量
-- 每个知识条目应该包含：问题、方案、代码示例、收益分析
-- 保持文档的时效性，及时更新过时的内容
-
-## 📖 相关资源
-
-- [设计模式 - 策略模式](https://refactoring.guru/design-patterns/strategy)
-- [Spring Framework 文档](https://spring.io/projects/spring-framework)
-- [Effective Java](https://www.oracle.com/java/technologies/effective-java.html)
-
-## 📅 更新日志
-
-- **2026-01-09**: 创建知识库，添加 Factory+Handler 模式和 CapitalFlowService 重构案例
-
+---
+title: 工程知识库
+description: 个人工程实践知识库 - 沉淀 Java、MySQL、系统设计、网络与操作系统、设计模式、重构案例和 AI 协作技巧
 ---
 
-**提示**: 这个知识库是活的，会随着你的学习和实践不断成长。保持记录，保持学习！
+> 个人工程实践知识库，沉淀 Java、MySQL、系统设计、网络与操作系统、设计模式、重构案例与 AI 协作技巧。
 
+## 站点说明
+
+1. 站点由 GitHub Pages + Jekyll cayman 主题渲染。
+2. 每个知识域独立目录，目录内的 `索引.md` 或 `README.md` 为主题导航入口。
+3. 所有问题节点保持「可枚举、可补充、可维护」。
+
+## 知识体系
+
+### Java
+
+- [Java 知识体系索引](./Java知识体系/索引.md)
+  - [并发与多线程](./Java知识体系/并发与多线程.md)
+  - [OOP](./Java知识体系/OOP.md)
+  - [反射](./Java知识体系/反射.md)
+  - [JavaAgent](./Java知识体系/JavaAgent.md)
+  - [JDK](./Java知识体系/JDK.md)
+  - [JVM](./Java知识体系/JVM.md)
+  - [常见问题排查](./Java知识体系/常见问题排查.md)
+- [Java 并发与 JUC：线程池](./Java并发与JUC/线程池.md)
+
+### MySQL
+
+- [MySQL 知识体系索引](./MySQL知识体系/索引.md)
+  - [主要组成与隔离级别](./MySQL知识体系/主要组成与隔离级别.md)
+  - [分区分表](./MySQL知识体系/分区分表.md)
+  - [SQL 优化](./MySQL知识体系/SQL优化.md)
+  - [日志](./MySQL知识体系/日志.md)
+  - [高可用](./MySQL知识体系/高可用.md)
+  - [性能优化](./MySQL知识体系/性能优化.md)
+  - [索引相关](./MySQL知识体系/索引相关.md)
+  - [其他参数优化](./MySQL知识体系/其他参数优化.md)
+  - [事务](./MySQL知识体系/事务.md)
+
+### 系统设计
+
+- [系统设计知识体系索引](./系统设计知识体系/索引.md)
+  - [核心因素](./系统设计知识体系/核心因素.md)
+  - [设计模式](./系统设计知识体系/设计模式.md)
+  - [经典题型](./系统设计知识体系/经典题型.md)
+  - [常见计算机设计](./系统设计知识体系/常见计算机设计.md)
+
+### 网络与操作系统
+
+- [网络与操作系统索引](./网络与操作系统/README.md)
+  - 操作系统：[内核态与用户态](./网络与操作系统/os/内核态与用户态.md) · [协程与线程](./网络与操作系统/os/协程与线程.md) · [DMA](./网络与操作系统/os/DMA.md) · [中断](./网络与操作系统/os/中断.md) · [IO 模型](./网络与操作系统/os/IO模型.md) · [硬件](./网络与操作系统/os/硬件.md) · [信号量](./网络与操作系统/os/信号量.md) · [内核缓冲](./网络与操作系统/os/内核缓冲.md)
+  - 网络：[TCP/IP 基础](./网络与操作系统/network/TCP_IP基础.md) · [HTTP 状态码](./网络与操作系统/network/HTTP状态码.md) · [HTTPS](./网络与操作系统/network/HTTPS.md) · [TCP 专题](./网络与操作系统/network/TCP专题.md) · [组网与协议](./网络与操作系统/network/组网与协议.md)
+
+### 数据结构与算法
+
+- [数据结构与算法索引](./数据结构与算法/README.md)
+  - 算法：[注意事项](./数据结构与算法/算法/注意事项.md) · [重点 tag](./数据结构与算法/算法/重点tag.md) · [刷题平台](./数据结构与算法/算法/刷题平台.md) · [思想](./数据结构与算法/算法/思想.md)
+  - Redis：[数据结构总览](./数据结构与算法/其他场景/redis/数据结构总览.md) · [BloomFilter](./数据结构与算法/其他场景/redis/BloomFilter.md) · [ZSet 与 SkipList](./数据结构与算法/其他场景/redis/ZSet与SkipList.md) · [Geohash](./数据结构与算法/其他场景/redis/Geohash.md)
+  - MySQL：[索引结构与 B+Tree](./数据结构与算法/其他场景/mysql/索引结构与BPlusTree.md) · [Hash 索引对比](./数据结构与算法/其他场景/mysql/Hash索引对比.md)
+  - JDK：[JUC 核心问题](./数据结构与算法/其他场景/jdk/JUC核心问题.md) · [集合类总览](./数据结构与算法/其他场景/jdk/集合类总览.md)
+  - 其他：[Bitmap 使用场景](./数据结构与算法/其他场景/bitmap使用场景.md)
+
+## 模式与重构
+
+### 设计模式落地实践
+
+- [Factory + Handler 模式](./模式落地实践/factory-handler-pattern.md)
+- [Adapter + Provider 模式](./模式落地实践/adapter-provider-pattern.md)
+- [Builder + Director 模式](./模式落地实践/builder-director-pattern.md)
+- [State + Machine / Engine 模式](./模式落地实践/State%20%2B%20Machine或Engine%20模式落地实践.md)
+- [Converter / Mapper + Decorator 模式](./模式落地实践/Converter%20或%20Mapper%20%2B%20Decorator%20模式落地实践.md)
+- [Publisher + Listener / Observer 模式](./模式落地实践/Publisher%20%2B%20Listener或Observer%20模式落地实践.md)
+- [责任链模式](./模式落地实践/责任链模式.md)
+
+### 重构案例
+
+- [CapitalFlowService 重构案例](./重构案例/CapitalFlowService%20重构案例.md)
+
+## AI 协作
+
+- [高效 Prompt 模板](./AI代码审查模板/effective-prompts.md)
+- [代码审查模板](./AI代码审查模板/代码审查模板.md)
+
+## 简历与项目
+
+- [resume-projects 索引](./resume-projects/README.md)
+  - [账户缓存架构优化项目](./resume-projects/账户缓存架构优化项目.md)
+  - [账户缓存优化（简历版本）](./resume-projects/账户缓存优化-简历版本.md)
+
+## 维护规则
+
+1. 新增主题：在对应一级目录新增 `md` 文件，并在该目录的 `索引.md` 或 `README.md` 中追加导航。
+2. 新增一级主题：先建立目录与索引文件，再在本 README 的「知识体系」段落追加链接。
+3. 文件命名：保持中文目录与中文术语，原始英文术语保留（如 `MVCC`、`Online DDL`、`MRR`）。
+4. 文档结构：每个主题文件统一包含「知识点清单 + 待补充项」两段。
+5. 链接规范：使用相对路径，含空格或特殊字符的文件名采用 URL 编码。
+
+## 在 Cursor 中使用
+
+### 通过 @ 引用本地知识
+
+```text
+@C:\Users\tongyu\Documents\knowledge-base\Java知识体系\并发与多线程.md
+请按这份大纲补充 AQS 入队流程。
+```
+
+### 通过 GitHub Pages 引用线上链接
+
+```text
+请参考 https://youmu1.github.io/knowledge/Java知识体系/JVM.html 的 GC 章节进行回答。
+```
+
+## GitHub Pages 配置说明
+
+1. Jekyll 主题：`jekyll-theme-cayman`，配置位于 [`_config.yml`](./_config.yml)。
+2. 排除项：`.obsidian/`、`*.base`、`terminals/` 等本地工具产物不参与构建。
+3. 启用方式：在 GitHub 仓库 `Settings → Pages` 选择 `Deploy from a branch`，分支选 `main`，目录选 `/ (root)`。
+
+## 更新日志
+
+1. 2026-04-28：重构 README 为 GitHub Pages 首页，新增 `_config.yml`，整合多套知识体系导航。
+2. 2026-01-09：创建知识库，添加 Factory+Handler 模式与 CapitalFlowService 重构案例。
+
+Side effects: 仅修改 `README.md` 与新增 `_config.yml`，未删除其它知识文件。
