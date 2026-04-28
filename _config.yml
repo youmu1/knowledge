@@ -4,6 +4,10 @@ theme: jekyll-theme-cayman
 lang: zh-CN
 show_downloads: false
 
+# 项目站（username.github.io/<仓库名>/）需配置，否则主题与生成链接可能指向错误根路径
+url: https://youmu1.github.io
+baseurl: "/knowledge"
+
 markdown: kramdown
 kramdown:
   input: GFM
