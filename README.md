@@ -4,15 +4,7 @@ description: 个人工程实践知识库 - 沉淀 Java、MySQL、系统设计、
 permalink: /
 ---
 
-> 个人工程实践知识库，沉淀 Java、MySQL、系统设计、网络与操作系统、设计模式、重构案例与 AI 协作技巧。
-
-## 站点说明
-
-1. 站点由 GitHub Pages + Jekyll cayman 主题渲染。
-2. 每个知识域独立目录，目录内的 `索引.md` 或 `README.md` 为主题导航入口。
-3. 所有问题节点保持「可枚举、可补充、可维护」。
-
-## 知识体系
+## 知识体系索引
 
 ### Java
 
@@ -88,39 +80,3 @@ permalink: /
 - [resume-projects 索引](./resume-projects/README.md)
   - [账户缓存架构优化项目](./resume-projects/账户缓存架构优化项目.md)
   - [账户缓存优化（简历版本）](./resume-projects/账户缓存优化-简历版本.md)
-
-## 维护规则
-
-1. 新增主题：在对应一级目录新增 `md` 文件，并在该目录的 `索引.md` 或 `README.md` 中追加导航。
-2. 新增一级主题：先建立目录与索引文件，再在本 README 的「知识体系」段落追加链接。
-3. 文件命名：保持中文目录与中文术语，原始英文术语保留（如 `MVCC`、`Online DDL`、`MRR`）。
-4. 文档结构：每个主题文件统一包含「知识点清单 + 待补充项」两段。
-5. 链接规范：使用相对路径，含空格或特殊字符的文件名采用 URL 编码。
-
-## 在 Cursor 中使用
-
-### 通过 @ 引用本地知识
-
-```text
-@C:\Users\tongyu\Documents\knowledge-base\Java知识体系\并发与多线程.md
-请按这份大纲补充 AQS 入队流程。
-```
-
-### 通过 GitHub Pages 引用线上链接
-
-```text
-请参考 https://youmu1.github.io/knowledge/Java知识体系/JVM.html 的 GC 章节进行回答。
-```
-
-## GitHub Pages 配置说明
-
-1. Jekyll 主题：`jekyll-theme-cayman`，配置位于 [`_config.yml`](./_config.yml)。
-2. 排除项：`.obsidian/`、`*.base`、`terminals/` 等本地工具产物不参与构建。
-3. 启用方式：在 GitHub 仓库 `Settings → Pages` 选择 `Deploy from a branch`，分支选 `main`，目录选 `/ (root)`。
-
-## 更新日志
-
-1. 2026-04-28：重构 README 为 GitHub Pages 首页，新增 `_config.yml`，整合多套知识体系导航。
-2. 2026-01-09：创建知识库，添加 Factory+Handler 模式与 CapitalFlowService 重构案例。
-
-Side effects: 仅修改 `README.md` 与新增 `_config.yml`，未删除其它知识文件。
