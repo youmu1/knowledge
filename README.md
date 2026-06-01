@@ -1,38 +1,46 @@
 ---
 title: 工程知识库
-description: 个人工程实践知识库 - 沉淀 Java、MySQL、系统设计、网络与操作系统、设计模式、重构案例和 AI 协作技巧
+description: 个人工程实践知识库 - 沉淀 Java、MySQL、系统设计、期权业务、网络与操作系统、数据结构与算法、设计模式、重构案例和 AI 协作技巧
 permalink: /
 ---
+
+个人面试与工程复习用的结构化笔记。各模块索引页只做导航；展开内容在对应主题文件中。
 
 ## 知识体系索引
 
 ### Java
 
 - [Java 知识体系索引](./Java知识体系/索引.md)
-  - [并发与多线程](./Java知识体系/并发与多线程.md)
-  - [OOP](./Java知识体系/OOP.md)
-  - [反射](./Java知识体系/反射.md)
-  - [JavaAgent](./Java知识体系/JavaAgent.md)
-  - [JDK](./Java知识体系/JDK.md)
-  - [JVM](./Java知识体系/JVM.md)
+  - [并发与多线程](./Java知识体系/并发与多线程.md) · [OOP](./Java知识体系/OOP.md) · [反射](./Java知识体系/反射.md)
+  - [JavaAgent](./Java知识体系/JavaAgent.md) · [JDK](./Java知识体系/JDK.md) · [JVM](./Java知识体系/JVM.md)
   - [常见问题排查](./Java知识体系/常见问题排查.md)
 - [Java 并发与 JUC：线程池](./Java并发与JUC/线程池.md)
+- 算法目录延伸：[JUC 核心问题](./数据结构与算法/其他场景/jdk/JUC核心问题.md) · [集合类总览](./数据结构与算法/其他场景/jdk/集合类总览.md)
 
 ### MySQL
 
 - [MySQL 知识体系索引](./MySQL知识体系/索引.md)
-  - **[复习案例集](./MySQL知识体系/复习案例集.md)**（考前速查）
-  - [索引相关](./MySQL知识体系/索引相关.md) · [SQL 优化](./MySQL知识体系/SQL优化.md) · [事务](./MySQL知识体系/事务.md) · [日志](./MySQL知识体系/日志.md)
+  - **[复习案例集](./MySQL知识体系/复习案例集.md)**（考前 15 分钟速查）
+  - Phase 1：[索引相关](./MySQL知识体系/索引相关.md) · [SQL 优化](./MySQL知识体系/SQL优化.md) · [事务](./MySQL知识体系/事务.md) · [日志](./MySQL知识体系/日志.md)
   - Phase 2 待补：[主要组成与隔离级别](./MySQL知识体系/主要组成与隔离级别.md) · [高可用](./MySQL知识体系/高可用.md) · [性能优化](./MySQL知识体系/性能优化.md) · [分区分表](./MySQL知识体系/分区分表.md) · [其他参数优化](./MySQL知识体系/其他参数优化.md)
+- 算法目录延伸：[B+Tree 结构](./数据结构与算法/其他场景/mysql/索引结构与BPlusTree.md) · [Hash 索引对比](./数据结构与算法/其他场景/mysql/Hash索引对比.md)
 
 ### 系统设计
 
 - [系统设计知识体系索引](./系统设计知识体系/索引.md)
-  - [核心因素](./系统设计知识体系/核心因素.md)
+  - [核心因素](./系统设计知识体系/核心因素.md) · [经典题型](./系统设计知识体系/经典题型.md) · [常见计算机设计](./系统设计知识体系/常见计算机设计.md)
   - [设计模式](./系统设计知识体系/设计模式.md)
-    - [GoF 23 模式总览](./系统设计知识体系/设计模式/GoF23模式总览.md) · [设计原则](./系统设计知识体系/设计模式/设计原则.md) · [框架与项目应用](./系统设计知识体系/设计模式/框架与项目应用.md) · [DDD 理解与实践](./系统设计知识体系/设计模式/DDD理解与实践.md)
-  - [经典题型](./系统设计知识体系/经典题型.md)
-  - [常见计算机设计](./系统设计知识体系/常见计算机设计.md)
+    - [GoF 23 模式总览](./系统设计知识体系/设计模式/GoF23模式总览.md) · [设计原则](./系统设计知识体系/设计模式/设计原则.md)
+    - [框架与项目应用](./系统设计知识体系/设计模式/框架与项目应用.md) · [DDD 理解与实践](./系统设计知识体系/设计模式/DDD理解与实践.md)
+
+### 期权业务
+
+- [期权业务知识体系索引](./期权业务/期权业务.md)
+  - 基础：[基础概念](./期权业务/基础概念.md) · [定价与希腊字母](./期权业务/定价与希腊字母.md)
+  - 结构：[结构要素对照表](./期权业务/结构/结构要素对照表.md) · [香草期权](./期权业务/结构/香草期权.md) · [障碍期权](./期权业务/结构/障碍期权.md) · [亚式期权](./期权业务/结构/亚式期权.md) · [数字期权](./期权业务/结构/数字期权.md) · [雪球与自动赎回](./期权业务/结构/雪球与自动赎回.md) · [价差与组合结构](./期权业务/结构/价差与组合结构.md)
+  - 生命周期：[生命周期总览](./期权业务/生命周期/生命周期总览.md) · [簿记与开仓](./期权业务/生命周期/簿记与开仓.md) · [期权费与保证金](./期权业务/生命周期/期权费与保证金.md) · [观察与触发事件](./期权业务/生命周期/观察与触发事件.md) · [平仓与行权](./期权业务/生命周期/平仓与行权.md) · [展期与公司行为调整](./期权业务/生命周期/展期与公司行为调整.md) · [到期结算](./期权业务/生命周期/到期结算.md)
+  - 工程实现：[领域模型与合约结构](./期权业务/实现/领域模型与合约结构.md) · [生命周期事件设计](./期权业务/实现/生命周期事件设计.md) · [现金流与 Handler 模式](./期权业务/实现/现金流与Handler模式.md) · [状态机与流程编排](./期权业务/实现/状态机与流程编排.md) · [估值与 Mark-to-Market](./期权业务/实现/估值与Mark-to-Market.md) · [风控与限额](./期权业务/实现/风控与限额.md)
+  - 面试：[高频问题清单](./期权业务/面试/高频问题清单.md) · [场景题与回答框架](./期权业务/面试/场景题与回答框架.md)
 
 ### 网络与操作系统
 
@@ -45,21 +53,19 @@ permalink: /
 - [数据结构与算法索引](./数据结构与算法/README.md)
   - 算法：[注意事项](./数据结构与算法/算法/注意事项.md) · [重点 tag](./数据结构与算法/算法/重点tag.md) · [刷题平台](./数据结构与算法/算法/刷题平台.md) · [思想](./数据结构与算法/算法/思想.md)
   - Redis：[数据结构总览](./数据结构与算法/其他场景/redis/数据结构总览.md) · [BloomFilter](./数据结构与算法/其他场景/redis/BloomFilter.md) · [ZSet 与 SkipList](./数据结构与算法/其他场景/redis/ZSet与SkipList.md) · [Geohash](./数据结构与算法/其他场景/redis/Geohash.md)
-  - MySQL：[索引结构与 B+Tree](./数据结构与算法/其他场景/mysql/索引结构与BPlusTree.md) · [Hash 索引对比](./数据结构与算法/其他场景/mysql/Hash索引对比.md)
+  - MySQL：[B+Tree](./数据结构与算法/其他场景/mysql/索引结构与BPlusTree.md) · [Hash 索引对比](./数据结构与算法/其他场景/mysql/Hash索引对比.md)
   - JDK：[JUC 核心问题](./数据结构与算法/其他场景/jdk/JUC核心问题.md) · [集合类总览](./数据结构与算法/其他场景/jdk/集合类总览.md)
   - 其他：[Bitmap 使用场景](./数据结构与算法/其他场景/bitmap使用场景.md)
 
 ## 模式与重构
 
+理论层见 [系统设计 · 设计模式](./系统设计知识体系/设计模式.md)；以下为项目落地与重构案例。
+
 ### 设计模式落地实践
 
-- [Factory + Handler 模式](./模式落地实践/factory-handler-pattern.md)
-- [Adapter + Provider 模式](./模式落地实践/adapter-provider-pattern.md)
-- [Builder + Director 模式](./模式落地实践/builder-director-pattern.md)
-- [State + Machine / Engine 模式](./模式落地实践/State%20%2B%20Machine或Engine%20模式落地实践.md)
-- [Converter / Mapper + Decorator 模式](./模式落地实践/Converter%20或%20Mapper%20%2B%20Decorator%20模式落地实践.md)
-- [Publisher + Listener / Observer 模式](./模式落地实践/Publisher%20%2B%20Listener或Observer%20模式落地实践.md)
-- [责任链模式](./模式落地实践/责任链模式.md)
+- [Factory + Handler](./模式落地实践/factory-handler-pattern.md) · [Adapter + Provider](./模式落地实践/adapter-provider-pattern.md) · [Builder + Director](./模式落地实践/builder-director-pattern.md)
+- [State + Machine / Engine](./模式落地实践/State%20%2B%20Machine或Engine%20模式落地实践.md) · [Converter / Mapper + Decorator](./模式落地实践/Converter%20或%20Mapper%20%2B%20Decorator%20模式落地实践.md)
+- [Publisher + Listener / Observer](./模式落地实践/Publisher%20%2B%20Listener或Observer%20模式落地实践.md) · [责任链 / Pipeline + Stage](./模式落地实践/责任链模式.md)
 
 ### 重构案例
 
