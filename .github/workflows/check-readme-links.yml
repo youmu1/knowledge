@@ -1,0 +1,16 @@
+name: Check README navigation links
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Verify README links all markdown files
+        run: python scripts/check-readme-links.py

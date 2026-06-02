@@ -1,0 +1,34 @@
+---
+description: 新增或重命名 Markdown 时同步维护根 README 导航与链接校验
+globs: "**/*.md"
+alwaysApply: false
+---
+
+# 根 README 导航规则
+
+本仓库以根目录 [README.md](../../README.md) 为全库入口，GitHub Pages 与本地浏览均依赖该文件的链接图。
+
+## 必须满足（新增/重命名/删除 `.md` 时）
+
+1. **根 README 直连**：除根 `README.md` 外，每个内容 `.md` 必须在根 `README.md` 中至少出现一次 Markdown 链接（`[文本](./路径.md)`），路径与磁盘文件名一致（含空格时用 URL 编码，如 `%20`）。
+2. **模块索引**：若文件位于已有「索引」的目录（`索引.md`、目录内 `README.md`、或 `期权业务.md` 等模块根索引），须同时在该模块索引中增加链接。
+3. **顶层目录表**：若新建顶层目录，须在根 `README.md` 的「顶层目录导航」表中增加一行，索引入口指向该目录的 `索引.md` 或 `README.md`。
+4. **校验命令**：修改后运行 `python scripts/check-readme-links.py`，退出码必须为 `0`。
+5. **禁止**：仅在某子目录索引中链接、却未在根 `README.md` 登记该文件。
+
+## 索引文件约定
+
+| 目录 | 索引入口 |
+|------|----------|
+| Java知识体系 | `索引.md` |
+| MySQL知识体系 | `索引.md` |
+| 系统设计知识体系 | `索引.md` |
+| 期权业务 | `期权业务.md` |
+| 网络与操作系统、数据结构与算法、resume-projects | 目录内 `README.md` |
+| Java并发与JUC、模式落地实践、重构案例、AI代码审查模板 | 目录内 `README.md` |
+
+## 完成检查清单
+
+- [ ] 根 `README.md` 已包含新文件链接
+- [ ] 模块索引已更新（如适用）
+- [ ] `python scripts/check-readme-links.py` 通过

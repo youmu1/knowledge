@@ -6,6 +6,29 @@ permalink: /
 
 个人面试与工程复习用的结构化笔记。各模块索引页只做导航；展开内容在对应主题文件中。
 
+## 维护规则
+
+1. 新增、重命名或删除任意内容 `.md` 后，必须在下文「知识体系索引」中为该文件增加或更新链接。
+2. 若文件位于已有模块索引的目录，须同步更新该目录的 `索引.md` 或 `README.md`。
+3. 修改后运行 `python scripts/check-readme-links.py`，退出码必须为 `0`（CI 在 push/PR 时同样执行）。
+4. 禁止仅在子目录索引中登记、却未在本文件登记该路径。
+
+## 顶层目录导航
+
+| 目录 | 索引入口 |
+|------|----------|
+| [Java知识体系](./Java知识体系/索引.md) | Java 基础、JVM、并发 |
+| [Java并发与JUC](./Java并发与JUC/README.md) | JUC 与线程池 |
+| [MySQL知识体系](./MySQL知识体系/索引.md) | 索引、事务、日志、高可用 |
+| [系统设计知识体系](./系统设计知识体系/索引.md) | 系统设计、设计模式 |
+| [期权业务](./期权业务/期权业务.md) | 产品结构、生命周期、工程实现 |
+| [网络与操作系统](./网络与操作系统/README.md) | OS 与网络协议 |
+| [数据结构与算法](./数据结构与算法/README.md) | 算法与 Redis/MySQL/JDK 延伸 |
+| [模式落地实践](./模式落地实践/README.md) | 项目内模式落地案例 |
+| [重构案例](./重构案例/README.md) | 重构实录 |
+| [AI代码审查模板](./AI代码审查模板/README.md) | Prompt 与审查模板 |
+| [resume-projects](./resume-projects/README.md) | 简历项目 STAR 描述 |
+
 ## 知识体系索引
 
 ### Java
@@ -14,7 +37,7 @@ permalink: /
   - [并发与多线程](./Java知识体系/并发与多线程.md) · [OOP](./Java知识体系/OOP.md) · [反射](./Java知识体系/反射.md)
   - [JavaAgent](./Java知识体系/JavaAgent.md) · [JDK](./Java知识体系/JDK.md) · [JVM](./Java知识体系/JVM.md)
   - [常见问题排查](./Java知识体系/常见问题排查.md)
-- [Java 并发与 JUC：线程池](./Java并发与JUC/线程池.md)
+- [Java 并发与 JUC 索引](./Java并发与JUC/README.md) · [线程池](./Java并发与JUC/线程池.md)
 - 算法目录延伸：[JUC 核心问题](./数据结构与算法/其他场景/jdk/JUC核心问题.md) · [集合类总览](./数据结构与算法/其他场景/jdk/集合类总览.md)
 
 ### MySQL
@@ -63,16 +86,18 @@ permalink: /
 
 ### 设计模式落地实践
 
+- [模式落地实践索引](./模式落地实践/README.md)
 - [Factory + Handler](./模式落地实践/factory-handler-pattern.md) · [Adapter + Provider](./模式落地实践/adapter-provider-pattern.md) · [Builder + Director](./模式落地实践/builder-director-pattern.md)
 - [State + Machine / Engine](./模式落地实践/State%20%2B%20Machine或Engine%20模式落地实践.md) · [Converter / Mapper + Decorator](./模式落地实践/Converter%20或%20Mapper%20%2B%20Decorator%20模式落地实践.md)
 - [Publisher + Listener / Observer](./模式落地实践/Publisher%20%2B%20Listener或Observer%20模式落地实践.md) · [责任链 / Pipeline + Stage](./模式落地实践/责任链模式.md)
 
 ### 重构案例
 
-- [CapitalFlowService 重构案例](./重构案例/CapitalFlowService%20重构案例.md)
+- [重构案例索引](./重构案例/README.md) · [CapitalFlowService 重构案例](./重构案例/CapitalFlowService%20重构案例.md)
 
 ## AI 协作
 
+- [AI 协作与审查模板索引](./AI代码审查模板/README.md)
 - [高效 Prompt 模板](./AI代码审查模板/effective-prompts.md)
 - [代码审查模板](./AI代码审查模板/代码审查模板.md)
 
